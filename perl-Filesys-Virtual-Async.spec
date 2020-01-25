@@ -4,7 +4,6 @@
 
 %define	pdir	Filesys
 %define	pnam	Virtual-Async
-%include	/usr/lib/rpm/macros.perl
 Summary:	Filesys::Virtual::Async - Base class for non blocking virtual filesystems
 Name:		perl-Filesys-Virtual-Async
 Version:	0.02
