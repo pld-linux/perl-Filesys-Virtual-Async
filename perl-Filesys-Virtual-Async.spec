@@ -7,7 +7,7 @@
 Summary:	Filesys::Virtual::Async - Base class for non blocking virtual filesystems
 Name:		perl-Filesys-Virtual-Async
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
