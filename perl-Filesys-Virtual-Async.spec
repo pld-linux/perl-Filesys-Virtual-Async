@@ -7,7 +7,7 @@
 Summary:	Filesys::Virtual::Async - Base class for non blocking virtual filesystems
 Name:		perl-Filesys-Virtual-Async
 Version:	0.02
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -45,6 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Filesys/Virtual/Async
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -52,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Filesys/Virtual/*.pm
-#%%{perl_vendorlib}/Filesys/Virtual/Async
+%dir %{perl_vendorlib}/Filesys/Virtual/Async
 %{_mandir}/man3/*
